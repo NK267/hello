@@ -11,15 +11,11 @@
 <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    　<!-- vue.js　-->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <link rel="manifest" href="manifest.json">
-    <title>PWA Sample</title>
      <script>
         // この記述を追記
         if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-                 .register('https://wpdjsnv.github.io/hello/service-worker.js') // ここはservice-worker.jsのパスを指定
+                 .register('/hello/service-worker.js') // ここはservice-worker.jsのパスを指定
                  .then(function() { console.log('Service Worker Registered'); });
         }
         // この記述を追記　ここまで

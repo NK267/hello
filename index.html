@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="description" content="なんか適当に作ってみたサイト">
-<title>HELLO</title>
+<title>HelloWorld!</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
 <link rel="apple-touch-icon" href="favicon.ico" sizes="76x76">
 <link rel="icon" href="favicon.ico" sizes="96x96">
+<link rel="stylesheet" type="text/css" href="btn.css">
 <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -14,8 +15,17 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="manifest" href="manifest.json">
     <title>PWA Sample</title>
+     <script>
+        // この記述を追記
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+                 .register('/service-worker.js') // ここはservice-worker.jsのパスを指定
+                 .then(function() { console.log('Service Worker Registered'); });
+        }
+        // この記述を追記　ここまで
+    </script>
 </head>
-<body background="background.jpg" styl="background: gray">
+<body background="background.jpg" styl ="background: gray">
 	<div class="container">
 <font color="skyblue" size="8"><p id="Clock1" style="display: inline"></p>
 <script type="text/javascript">
@@ -58,18 +68,39 @@ return ret;
 <input type=hidden name=domains value="●●●"><br>
 </font>
 </td></tr></table>
-</form><a href="my/O.html"><font color="black"></a></font><br>
 <!-- SiteSearch Google -->
-<div style="margin-left:10%;margin-right:10%;">
-		<button style="width:50%;padding:30px;font-size:30px;" onclick="location.href='https://www.google.com/?gws_rd=ssl'"><font color="blue" size="7">G<font color="red" size="7">o<font color="yellow" size="7">o<font color="blue" size="7">g<font color="green" size="7">l<font color="red" size="7">e</font></font></font></font></font></font></button><button style="width:50%;padding:30px;font-size:30px;" onclick="location.href='https://www.yahoo.co.jp/'"><font color="red" size="7">Yahoo</font></button><button style="width:50%;padding:30px;font-size:30px;" onclick="location.href='https://duckduckgo.com/'"><font color="purple" size="7">Duckduckgo</font></button><button style="width:50%;padding:30px;font-size:48px;" onclick="location.href='google/Google.html'"><font color="black" size="4">ぐーぐる？</font></button><br><button style="width:50%;padding:30px;font-size:48px;" onclick="location.href='http://dtcwpczjikfh.php.xdomain.jp/ke.php/'"><font color="black" size="4">掲示板</font></button><br>
+</form><a href="my/O.html"><font color="black"></a></font><br>
+<style>
+.buttonstyle {
+background-color: gray;
+color: black;
+border: 2px solid #4CAF50;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin-left:20px;
+}
+
+.buttonstyle:hover {
+background-color: #4CAF50;
+color: white;
+}
+</style>
+<a class="buttonstyle" href="https://www.google.com/?gws_rd=ssl">
+            <font color="blue" size="7">G</font><font color="red" size="7">o</font><font color="yellow" size="7">o</font><font color="blue" size="7">g</font><font color="green" size="7">l</font><font color="red" size="7">e</font></a>
+<a class="buttonstyle" href="https://www.yahoo.co.jp/"><font color="red" size="7">Yahoo</font></a>
+<a class="buttonstyle" href="https://duckduckgo.com/"><font color="purple" size="7">Duckduckgo</font></a><br>
+<a class="buttonstyle" href="google/Google.html"><font color="black" size="7">ぐーぐるうう？</font></a>
+<a class="buttonstyle" href="http://dtcwpczjikfh.php.xdomain.jp/ke.php/"><font color="black" size="7">掲示板</font></a>
+<br>
+
 <font color="blue" size="7"><a href="TYOUSEN/TYOUSEN.html">NEWS!</a></font><br>
 <font color="white">
-<h1><font color="pink">もうすぐ修学旅行！</font><br>みんなで楽しい思い出を作ろう<font size="5">by nimu</font></h1>
-<p>我ながら良いことを書いたと思う</p>
-
-
-
-
+<h1>テスト頑張ろう！</h1>
+</font>
+<a href="こんにちは！.exe"><font size="5" color="purple">自作EXEファイル</font></a>
 
 
 
